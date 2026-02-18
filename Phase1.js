@@ -73,7 +73,79 @@ const numbers=[1,2,3,4,5,56];
 // Map- transform each element
  const doubled=numbers.map(num=>num*3);
  console.log(doubled); // [3, 6, 9, 12, 15, 168]
-
+// Filter- filter elements based on condition get more than one element
 const evens=numbers.filter(num=>num%2==0);
 console.log(evens); // [2, 4, 56]
+ // Find- find first element that matches condition
+ const found=numbers.find(num=>num>4);
+ console.log(found); // 5
+// reduce- reduce array to single value
+const sum=numbers.reduce((additional,num)=>additional+num,0);
+console.log(sum); // 71
+// foreach- iterate over array
+numbers.forEach(num=>{
+    console.log(num); // 1 2 3 4 5 56
+});
+numbers.push(100); // add element to end
+console.log(numbers); // [1, 2, 3, 4, 5, 56, 100]
+numbers.pop(); // remove last element
+console.log(numbers); // [1, 2, 3, 4, 5, 56]
+numbers.includes(3); // check if element exists
+console.log(numbers.includes(3)); // true
+// Objects and Object Manipulation
+// object creation 
+const user={
+name:"Hairsh",
+age:23,
+greet:function(){
+    return `Hello, I am ${this.name}`;
+    return `Hello, I am ${this.age}`;
+}
+};
+console.log(user.greet(name)); // Hello, I am Harish
+console.log(user['age']);
+// adding new property
+user.address="India";
+console.log(user.address);
+// deleting property
+delete user.age;
+console.log(user.age); // undefined
+// object destructuring
+const { name: userName, address } = user;
+console.log(address); // Harish
 
+// Conditional Statements
+let username="";
+if(!username){
+    console.log("username is required"); // username is required
+}
+let reqbody="";
+if(!reqbody){
+    console.log("Rquest body is required"); // Request body is required
+}
+/*
+let email= req.body.email;
+if(!email){
+    return res.status(400).json({error:"Email is required "}); // Email is required
+}
+    */
+
+// Loops For loop
+for(let i=0;i<5;i++){
+    console.log(i); // 0 1 2 3 4
+}
+// While loop
+let j=0;
+while(j<3){
+    console.log(j);
+    j++;
+}
+// Do-while loop
+let k=0;
+do{
+    console.log(k);
+    k++;
+}
+while(k<10);
+
+// 
