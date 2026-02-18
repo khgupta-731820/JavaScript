@@ -1,5 +1,15 @@
 /*
 Git command to push to code 
+1. git add . (to stage all changes)
+2. git commit -m "Your commit message" (to commit the changes)
+3. git push origin main (to push to the main branch)
+
+to remove the old commit message and add a new one
+1. rm filename.js (to remove the file)
+2. git add . (to stage the changes) 
+3.git rm filename.js (to remove the file from staging area)
+4. git commit -m "Your new commit message" (to commit the changes with new message)
+5. git push origin main (to push the changes to the main branch)
 
 */
 
