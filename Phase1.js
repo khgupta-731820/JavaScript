@@ -67,3 +67,13 @@ console.log(greetshort("Harish Kumar Gupta")); // Hello, Harish Kumar Gupta
 
 const greetwithdefault=(name3= "Guest")=>`Hello,${name3}`;
 console.log(greetwithdefault()); // Hello, Guest
+
+// Arrays and Arrays methods
+const numbers=[1,2,3,4,5,56];
+// Map- transform each element
+ const doubled=numbers.map(num=>num*3);
+ console.log(doubled); // [3, 6, 9, 12, 15, 168]
+
+const evens=numbers.filter(num=>num%2==0);
+console.log(evens); // [2, 4, 56]
+
