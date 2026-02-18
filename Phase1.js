@@ -1,3 +1,8 @@
+/*
+Git command to push to code 
+
+*/
+
 console.log("Phase 1: Initialization");
 // Variables and data types
 let age=25; // Number
