@@ -21,4 +21,7 @@
     // 1 start
     // 3 end
     // 2 middle (after 2 seconds)
+
+    // Promises
+    // Need to watch video for better understanding with examples...
     

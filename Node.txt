@@ -1,0 +1,106 @@
+# ==========================================
+# WHAT IS NPM?
+# ==========================================
+# - Package manager for Node.js
+# - Install, manage, and share JavaScript packages
+# - Comes bundled with Node.js
+
+# Check npm version
+npm --version
+
+# ==========================================
+# PACKAGE.JSON (Project Configuration File)
+# ==========================================
+
+# Initialize new project (creates package.json)
+npm init
+
+# Quick initialization (skip questions)
+npm init -y
+
+# Example package.json:
+{
+  "name": "my-api",
+  "version": "1.0.0",
+  "description": "My REST API",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "jest"
+  },
+  "keywords": ["api", "nodejs"],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mysql2": "^3.6.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
+
+# ==========================================
+# INSTALLING PACKAGES
+# ==========================================
+
+# Install a package (saves to dependencies)
+npm install express
+npm i express              # Short form
+
+# Install as dev dependency (only for development)
+npm install --save-dev nodemon
+npm i -D nodemon           # Short form
+
+# Install globally (available system-wide)
+npm install -g nodemon
+
+# Install specific version
+npm install express@4.17.1
+
+# Install all dependencies from package.json
+npm install
+
+# ==========================================
+# REMOVING PACKAGES
+# ==========================================
+
+npm uninstall express
+npm remove express
+npm rm express
+
+# ==========================================
+# USEFUL PACKAGES FOR BACKEND
+# ==========================================
+
+# Express - Web framework
+npm install express
+
+# MySQL driver
+npm install mysql2
+
+# Environment variables
+npm install dotenv
+
+# Input validation
+npm install joi
+
+# Password hashing
+npm install bcrypt
+
+# JSON Web Tokens (authentication)
+npm install jsonwebtoken
+
+# CORS (Cross-Origin Resource Sharing)
+npm install cors
+
+# Request logging
+npm install morgan
+
+# Auto-restart server on file changes (dev only)
+npm install --save-dev nodemon
+
+# ==========================================
+# USING INSTALLED PACKAGES
+# ==========================================
