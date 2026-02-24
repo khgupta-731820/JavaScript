@@ -23,5 +23,67 @@
     // 2 middle (after 2 seconds)
 
     // Promises
-    // Need to watch video for better understanding with examples...
-    
+   // crreating a promise
+   //regular function
+   function calculateBMI(weight,height){
+    return weight/(height*height);
+   }
+   console.log(calculateBMI(70,1.75)); // 22.86
+    // Object and Destructuring
+
+    const patient={
+        id:1,
+        name:"Harish",
+        age:23,
+        weight:70,
+        height: 5.8,
+        bloodgroup : "NA",
+        Address: {
+            city:"Rockville",
+            state:"MD",
+            zip:"20897"
+        }
+    };
+    console.log(patient.name);
+    console.log(patient.Address.city);
+
+    // destructuring- extrcating values into variables
+    const{name:patientname,age:patientage,Address:patientaddress}=patient
+    console.log(patientname);
+
+    console.log(patientage);
+    console.log(patientaddress.state);
+    // Arrays and Array Method
+    const patients=[
+        {
+            id:1,
+            name:"Sunil",
+            age:25,
+            weight:80,
+            status :"recovered"
+        },
+        {
+            id:2,
+            name:"SKG",
+            age:24,
+            weight:50,
+            status :"recovered"
+        },
+        {
+            id:3,
+            name:"HKG",
+            age:22,
+            weight:55,
+            status :"Admitted"
+        },
+    ];
+    // filter -get subset
+ const recoveredPatients=patients.filter(p=>p.status=="recovered");
+ console.log(recoveredPatients);
+
+ // find - get first element matching condition
+ const bob = patients.find(p=>p.name=="HKG");
+ console.log(bob);
+
+// reduce- calculate somthing from array
+

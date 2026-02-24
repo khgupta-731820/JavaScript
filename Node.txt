@@ -104,3 +104,32 @@ npm install --save-dev nodemon
 # ==========================================
 # USING INSTALLED PACKAGES
 # ==========================================
+my-api/
+│
+├── node_modules/          # Installed packages (auto-generated)
+│
+├── src/                   # Source code
+│   ├── config/
+│   │   └── db.js         # Database configuration
+│   │
+│   ├── controllers/       # Request handlers
+│   │   └── userController.js
+│   │
+│   ├── models/            # Database models
+│   │   └── userModel.js
+│   │
+│   ├── routes/            # API routes
+│   │   └── userRoutes.js
+│   │
+│   ├── middlewares/       # Custom middleware
+│   │   └── auth.js
+│   │
+│   └── utils/             # Helper functions
+│       └── logger.js
+│
+├── .env                   # Environment variables (DON'T commit!)
+├── .env.example           # Environment template (commit this)
+├── .gitignore             # Git ignore rules
+├── package.json           # Project configuration
+├── package-lock.json      # Locked dependencies
+└── index.js               # Entry point
